@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background: linear-gradient(to bottom, #000000, #001f3f); /* Black to Blue gradient background */
+            color: #ffffff; /* White text color */
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            padding: 50px;
+        }
+
+        h1 {
+            font-size: 48px; /* Increased font size for SlowGRINDFitness in the header */
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            margin-bottom: 40px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #001f3f; /* Blue background for navigation links */
+            padding: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 20px;
+        }
+
+        blockquote {
+            font-style: italic;
+            font-size: 24px;
+            margin: 40px 0;
+        }
+
+        #payment-form {
+            margin-top: 50px; /* Adjusted margin top for the form */
+            display: flex;
+            flex-direction: column; /* Spread elements vertically */
+            align-items: center;
+        }
+
+        #payment-form label {
+            margin-top: 20px; /* Spacing between input fields */
+            display: block;
+        }
+
+        #payment-form input,
+        #payment-form select {
+            width: 80%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        #payment-form button[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 80%;
+        }
+
+        #payment-form button[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+    <title>SlowGRINDFitness</title>
+</head>
+<body>
+
+<nav>
+    <a href="homepage.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="payment.html">Payment</a>
+    <a href="aboutme.html">About Me</a>
+</nav>
+
+<div class="container">
+
+    <h1>SlowGrind Fitness Payment</h1>
+
+    <form id="payment-form">
+        <label for="card-type">Select Card Type:</label>
+        <select id="card-type" name="card-type">
+            <option value="visa">Visa</option>
+            <option value="mastercard">Mastercard</option>
+            <option value="discover">Discover</option>
+        </select>
+
+        <label for="card-number">Card Number:</label>
+        <input type="text" id="card-number" name="card-number" placeholder="Enter card number" required>
+
+        <label for="security-code">Security Code:</label>
+        <input type="text" id="security-code" name="security-code" placeholder="Enter security code" required>
+
+        <label for="expiration-date">Expiration Date:</label>
+        <input type="text" id="expiration-date" name="expiration-date" placeholder="MM/YYYY" required>
+
+        <label for="card-holder-name">Name on Card:</label>
+        <input type="text" id="card-holder-name" name="card-holder-name" placeholder="Enter name on card" required>
+
+        <button type="submit">Submit Payment</button>
+    </form>
+
+</div>
+
+</body>
+</html>
+
+
+

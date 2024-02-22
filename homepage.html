@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background: linear-gradient(to bottom, #000000, #001f3f); /* Black to Blue gradient background */
+            color: #ffffff; /* White text color */
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            padding: 50px;
+        }
+
+        h1 {
+            font-size: 48px; /* Increased font size for SlowGRINDFitness in the header */
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            margin-bottom: 40px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #001f3f; /* Blue background for navigation links */
+            padding: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 20px;
+        }
+
+        blockquote {
+            font-style: italic;
+            font-size: 24px;
+            margin: 40px 0;
+        }
+
+        #whatIOffer {
+            padding: 50px;
+        }
+
+        #whatIOffer h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        #whatIOffer p {
+            font-size: 18px;
+        }
+
+        .contact-form {
+            background-color: #001f3f;
+            padding: 20px;
+        }
+
+        .contact-form input[type="email"],
+        .contact-form input[type="text"],
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: none;
+            background-color: #ffffff;
+            color: #000000;
+        }
+
+        .contact-form input[type="submit"] {
+            background-color: #ffffff;
+            color: #001f3f;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-form input[type="submit"]:hover {
+            background-color: #cccccc;
+        }
+    </style>
+    <title>SlowGRINDFitness</title>
+</head>
+<body>
+
+    <header>
+        <h1>SlowGRINDFitness</h1>
+        <p>Empowering you to achieve your fitness goals with perseverance and dedication.</p>
+    </header>
+
+    <nav>
+        <a href="homepage.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="payment.html">Payment</a>
+        <a href="aboutme.html">About Me</a>
+    </nav>
+
+    <section id="quote">
+        <blockquote>
+            "Strength does not come from the body. It comes from the will."
+        </blockquote>
+    </section>
+
+    <section id="whatIOffer">
+        <h2>What I Offer</h2>
+        <p>Personalized fitness plans, nutrition guidance, and dedicated support to help you transform your lifestyle and achieve your fitness goals. They provide expert guidance on proper exercise techniques, ensuring safety and effectiveness throughout the workout sessions. Additionally, a top-notch personal trainer serves as a motivator, offering unwavering support and encouragement to keep clients focused and committed to their fitness journey. They possess excellent communication skills, ensuring clear explanations of exercises, nutritional advice, and overall wellness tips. Ultimately, a great personal trainer fosters a positive and empowering environment, creating a strong partnership with clients to achieve sustainable and transformative fitness results.</p>
+    </section>
+
+    <section class="contact-form">
+        <h2>Contact Me</h2>
+        <form action="process_form.php" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required><br>
+            <input type="email" name="email" placeholder="Your Email" required><br>
+            <textarea name="message" rows="4" placeholder="Your Message" required></textarea><br>
+            <input type="submit" value="Send Message">
+        </form>
+    </section>
+    
+
+    <section class="contact-info">
+        <p>Email: <a href="mailto:slowgrindfitness@yahoo.com">slowgrindfitness@yahoo.com</a></p>
+        <p>Follow me on Instagram: <a href="https://www.instagram.com/your_instagram_handle/">@your_instagram_handle</a></p>
+        <p>Download the Trainerize app:</p>
+        <p><a href="https://apps.apple.com/us/app/trainerize/id547747378">iOS</a> | <a href="https://play.google.com/store/apps/details?id=com.trainerize.trainerize">Android</a></p>
+    </section>
+    
+
+</body>
+</html>
+
